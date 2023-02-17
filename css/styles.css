@@ -105,13 +105,12 @@ img {
     display: flex;
     color: #2E2F42;
     flex-direction: column;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-item:hover,
 .header-item:focus,
 .header-item.current {
     color: #404BBF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .current{
@@ -137,7 +136,7 @@ img {
     display: flex;
 }
 
-.header-mail {
+.header-cont-address {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -145,24 +144,9 @@ img {
     letter-spacing: 0.02em;
     margin-right: 40px;
     color: #434455;
-}
-.header-mail:hover,
-.header-mail:focus {
-    color: #404BBF;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-tel {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(24/16);
-    letter-spacing: 0.02em; 
-    color: #434455;
-}
-
-.header-tel:hover,
-.header-tel:focus {
+.header-cont-address:is(:hover, :focus) {
     color: #404BBF;
 }
 
@@ -210,12 +194,12 @@ img {
     padding: 16px 32px;
     margin: 0 auto;
     display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .heading-bnt:hover,
 .heading-bnt:focus {
     background: #404BBF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .features {
     padding: 120px 0px;
@@ -378,13 +362,12 @@ img {
     align-items: center;
     border-radius: 50%;
     fill: #F4F4FD;
-    background-color: #4D5AE5
-    
+    background-color: #4D5AE5;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:is(:hover, :focus) {
     background: #404BBF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon{
@@ -429,6 +412,7 @@ img {
     justify-content: center;
     align-items: center;
     color: #AFB1B8;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -440,7 +424,6 @@ img {
 .customer-link:is(:hover, :focus) {
     border-color: #404BBF;
     color: #404BBF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -505,17 +488,17 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: #F4F4FD;
+    color: #F4F4FD;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:is(:hover, :focus) {
     background-color: #31D0AA;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon {
-
+    fill:currentColor;
 }
 
 .backdrop{
@@ -612,6 +595,7 @@ img {
     border-radius: 4px;
     padding: 12px 24px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -619,7 +603,6 @@ img {
 .portfolio-btn:focus{
     background: #4D5AE5;
     color: #F4F4FD;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list {
@@ -636,14 +619,16 @@ img {
 
 .portfolio-link:is(:hover, :focus) {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item {}
+.portfolio-item {
+    
+}
 
-.portfolio-item:is(:hover, :focus) .portfolio-card-overlay {
+.portfolio-link:is(:hover, :focus) .portfolio-card-overlay {
     transform: translateY(0);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .portfolio-card-wrapper {
