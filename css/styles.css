@@ -107,6 +107,7 @@ img {
 .header-item:focus,
 .header-item.current {
     color: #404BBF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -145,6 +146,7 @@ img {
 .header-mail:hover,
 .header-mail:focus {
     color: #404BBF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-tel {
@@ -210,7 +212,7 @@ img {
 .heading-bnt:hover,
 .heading-bnt:focus {
     background: #404BBF;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .features {
     padding: 120px 0px;
@@ -379,7 +381,7 @@ img {
 
 .team-soc-link:is(:hover, :focus) {
     background: #404BBF;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon{
@@ -434,7 +436,8 @@ img {
 
 .customer-link:is(:hover, :focus) {
     border-color: #404BBF;
-    color: #404BBF
+    color: #404BBF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -506,7 +509,7 @@ img {
 
 .social-link:is(:hover, :focus) {
     background-color: #31D0AA;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon {
 
@@ -613,7 +616,7 @@ img {
 .portfolio-btn:focus{
     background: #4D5AE5;
     color: #F4F4FD;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list {
@@ -630,12 +633,14 @@ img {
 
 .portfolio-link:is(:hover, :focus) {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item {}
 
 .portfolio-item:is(:hover, :focus) .portfolio-card-overlay {
     transform: translateY(0);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card-wrapper {
