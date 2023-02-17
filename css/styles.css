@@ -539,6 +539,7 @@ img {
     justify-content: center;
     margin-left: auto;
     padding: 0;
+    cursor: pointer;
 }
 .modal-closing {
 }
